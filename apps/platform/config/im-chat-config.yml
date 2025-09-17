@@ -66,10 +66,9 @@ data:
     db: 0
     maxRetry: 10
     poolSize: 100
-   # tls:
-    #  enableTLS: true
-    #  serverName: 'akachat-staging-el5e9i.serverless.apse1.cache.amazonaws.com'
-
+  # tls:
+  #  enableTLS: true
+  #  serverName: 'akachat-staging-el5e9i.serverless.apse1.cache.amazonaws.com'
 
   share.yml: |
     openIM:
@@ -148,15 +147,15 @@ data:
           verificationCodeTemplateCode: ""
         aws:
           endpoint: ""
-          accessKeyId: "LTAI5tMjPXXgQazUx7BdVYcv"
-          accessKeySecret: "G3tb5NGcZ1fHKNgnGsbPJ0B8sP72Po"
+          accessKeyId: ""
+          accessKeySecret: ""
           signName: "akachat" # the "from"
           verificationCodeTemplateCode: ""
         mail:
           enable: true
           title: "Verification Code"
-          awsSESUsername: "AKIATAY7LWRABOFXA2EY"
-          awsSESPassword: "BGY0OEtknRK7XzgVbcTOSEDVkmHSYIZzZkm4PB2iz3Yf"
+          awsSESUsername: ""
+          awsSESPassword: ""
           senderEmail: "noreply@inter-digital.org"
           smtpAddr: "email-smtp.ap-southeast-1.amazonaws.com"
           smtpPort: 587

@@ -46,30 +46,29 @@ data:
     isSimplify: true
 
   mongodb.yml: |
-      uri: "mongodb://openIM:BnNv2Mkzu9ES@dds-d9j399ee00647e742.mongodb.ap-southeast-5.rds.aliyuncs.com:3717,dds-d9j399ee00647e741.mongodb.ap-southeast-5.rds.aliyuncs.com:3717/openim_v3?replicaSet=mgset-1107805239"
-      address: ['dds-d9j399ee00647e742.mongodb.ap-southeast-5.rds.aliyuncs.com:3717','dds-d9j399ee00647e741.mongodb.ap-southeast-5.rds.aliyuncs.com:3717']
-      replicaSet: mgset-1107805239
-      # Name of the database
-      database: openim_v3
-      # Username for database authentication
-      username: openIM
-      # Password for database authentication
-      password: BnNv2Mkzu9ES
-      # Maximum number of connections in the connection pool
-      maxPoolSize: 100
-      # Maximum number of retry attempts for a failed database connection
-      maxRetry: 10
-      authSource: openim_v3
+    uri: "mongodb://openIM:BnNv2Mkzu9ES@dds-d9j399ee00647e742.mongodb.ap-southeast-5.rds.aliyuncs.com:3717,dds-d9j399ee00647e741.mongodb.ap-southeast-5.rds.aliyuncs.com:3717/openim_v3?replicaSet=mgset-1107805239"
+    address: ['dds-d9j399ee00647e742.mongodb.ap-southeast-5.rds.aliyuncs.com:3717','dds-d9j399ee00647e741.mongodb.ap-southeast-5.rds.aliyuncs.com:3717']
+    replicaSet: mgset-1107805239
+    # Name of the database
+    database: openim_v3
+    # Username for database authentication
+    username: openIM
+    # Password for database authentication
+    password: BnNv2Mkzu9ES
+    # Maximum number of connections in the connection pool
+    maxPoolSize: 100
+    # Maximum number of retry attempts for a failed database connection
+    maxRetry: 10
+    authSource: openim_v3
 
   redis.yml: |
-      address: ['r-d9jj3sgajitxtqb1h6.redis.ap-southeast-5.rds.aliyuncs.com:6379']
-      username: 'default'
-      password: '5YkuUQ7cAJ4CC622'
-      clusterMode: false
-      db: 0
-      maxRetry: 10
-      poolSize: 100
-
+    address: ['r-d9jj3sgajitxtqb1h6.redis.ap-southeast-5.rds.aliyuncs.com:6379']
+    username: 'default'
+    password: '5YkuUQ7cAJ4CC622'
+    clusterMode: false
+    db: 0
+    maxRetry: 10
+    poolSize: 100
 
   local-cache.yml: |
     user:
@@ -385,7 +384,6 @@ data:
         secretAccessKey: 'TyRAOlaYKb2kuS9tmGGjNhsLHxu5SkOGHWuRhQYG'
         publicRead: false
         detail: 'https://ap-southeast-1.console.aws.amazon.com/s3/buckets/akachat?region=ap-southeast-1&tab=objects&bucketType=general'
-        
 
   share.yml: |
     secret: sIpdsOSGLsCfeN5q093cWdI3t
@@ -413,7 +411,6 @@ data:
     encryption:
       isEnabled: false
       key: f4339f6a0554a792ad720d5d772d6bcf # AES-128
-
 
   kafka.yml: |
     producerAck: 
@@ -455,13 +452,13 @@ data:
     # Flag to enable or disable public read access to the bucket
     publicRead: "false"
 
-  s3.yml: | 
+  s3.yml: |
     region: 'ap-southeast-1'
     bucket: 'akachat'
-    accessKeyID: 'AKIATAY7LWRAEXY23LX7'
-    secretAccessKey: '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'
+    accessKeyID: ''
+    secretAccessKey: ''
     publicRead: false
-    detail: 'https://ap-southeast-1.console.aws.amazon.com/s3/buckets/akachat?region=ap-southeast-1&tab=objects&bucketType=general'
+    detail: ''
 
   notification.yml: |
     groupCreated:
@@ -1221,7 +1218,3 @@ data:
           - targets: [ internal_ip:12320 ]
             labels:
               namespace: default
-
-
-
-
