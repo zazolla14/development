@@ -5,8 +5,8 @@ metadata:
   namespace: argocd
 type: Opaque
 stringData:
-  git_username: "peter0000" #<bitbucket 用户名>
-  git_password: "" #<bitbucket app password>
+  git_username:
+  git_password:
 
 ---
 apiVersion: v1

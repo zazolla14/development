@@ -147,9 +147,9 @@ data:
           verificationCodeTemplateCode: ""
         aws:
           endpoint: ""
-          accessKeyId: ""
-          accessKeySecret: ""
-          signName: "akachat" # the "from"
+          accessKeyId: 
+          accessKeySecret: 
+          signName: "" # the "from"
           verificationCodeTemplateCode: ""
         mail:
           enable: true
