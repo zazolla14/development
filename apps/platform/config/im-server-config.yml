@@ -380,8 +380,8 @@ data:
       aws:
         region: 'ap-southeast-1'
         bucket: 'akachat-staging'
-        accessKeyID: 'AKIATAY7LWRAEXY23LX7'
-        secretAccessKey: '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'
+        accessKeyID: ''
+        secretAccessKey: ''
         publicRead: false
         detail: 'https://ap-southeast-1.console.aws.amazon.com/s3/buckets/akachat?region=ap-southeast-1&tab=objects&bucketType=general'
 
@@ -455,10 +455,10 @@ data:
   s3.yml: |
     region: 'ap-southeast-1'
     bucket: 'akachat'
-    accessKeyID: ''
-    secretAccessKey: ''
+    accessKeyID: 
+    secretAccessKey: 
     publicRead: false
-    detail: ''
+    detail:
 
   notification.yml: |
     groupCreated:
