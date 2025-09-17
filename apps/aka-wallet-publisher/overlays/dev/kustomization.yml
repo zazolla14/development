@@ -1,0 +1,24 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: default
+resources:
+  - ../../base
+patches:
+  - target:
+      group: apps
+      version: v1
+      kind: CronJob
+      name: wallet-publisher-refund-trx
+      namespace: default
+    patch: |-
+      - op: replace
+        path: /spec/schedule
+        value: "0 * * * *"
+      - op: add
+        path: /spec/template/spec/nodeSelector
+        value:
+          alibabacloud.com/nodepool-id: npa34ac756a1b042f2ad17d64918562096
+images:
+  - name: akachat/server
+    newTag: da1265fa3b8f2b208b69d8d9d7399b12-a5b2f71
+    newName: ran7891/aka-wallet-publisher
